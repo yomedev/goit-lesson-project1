@@ -1,0 +1,38 @@
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #fff;
+  height: 100vh;
+  gap: 24px;
+}
+
+.brand {
+  height: 80px;
+  background-color: #161D2A;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #010101;
+}
+
+.user {
+  justify-self: flex-end;
+  margin: 24px;
+}

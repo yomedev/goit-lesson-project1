@@ -1,0 +1,11 @@
+.list {
+  list-style: none;
+}
+
+.item {
+  font-weight: 800;
+}
+
+.active {
+  color: green;
+}

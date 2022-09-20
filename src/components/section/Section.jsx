@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-const Section = ({children, title}) => {
+const Section = ({ children, title, orientetion }) => {
+
   return (
-    <section>
-      {title && <h3>{title}</h3>}
-      {children}
-    </section>
+    <MySection orientetion={orientetion}>
+      <h3>{title}</h3>
+      {/* {children} */}
+    </MySection>
   )
 }
 
@@ -16,3 +18,11 @@ Section.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node
 }
+
+const MySection = styled.section`
+  display: flex;
+  flex-direction: ${props => (
+  props.orientetion === "column" 
+  ? "column"
+  : "row")};
+`

@@ -1,14 +1,13 @@
 import MenuItem from "./MenuItem"
 
+
 const Menu = ({ items }) => {
   return (
-    <ul>
-      {items.map(({name}) => (
-        <li key={name}>
-          <MenuItem name={name} />
-        </li>
+    <nav className="menu">
+      {items.map(({ name }) => (
+        <MenuItem key={name} name={name} />
       ))}
-    </ul>
+    </nav>
   )
 }
 

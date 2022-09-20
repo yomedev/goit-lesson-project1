@@ -1,11 +1,12 @@
 import notFound from '../../assets/not-found.png'
+import './user.scss'
 
 const User = ({profileUrl = notFound, name}) => {
   return (
-    <div>
-      <img src={profileUrl} alt="user" />
+    <a className="user">
+      {/* <img src={profileUrl} alt="user" /> */}
       <p>{name}</p>
-    </div>
+    </a>
   )
 }
 
